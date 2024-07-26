@@ -1,0 +1,14 @@
+{
+    "questions": [
+        "what's the name of your company?",
+        "what's your company?",
+        "where do you work?",
+        "what company is this?"
+
+    ],
+    "answers": [
+        "Our company is Sam's iPhone Repairs",
+        "Sam's iPhone Repairs"
+
+    ]
+}

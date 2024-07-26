@@ -1,0 +1,15 @@
+{
+    "questions": [
+        "hello",
+        "Goodmorning",
+        "Goodafternoon",
+        "hi",
+        "hey"
+    ],
+    "answers": [
+        "Hello! This is Sam's iPhone Repairs. My name is GilbertAI. We are  a leading repair service provider specializing in all models of iPhones. With over 10 years of experience in the industry, our certified technicians provide fast, reliable, and affordable repair services to get your device back to optimal performance.",
+        "Goodmorning! Hope you're well. Thanks for contacting Sam's iPhone Repairs, a leading repair service provider specializing in all models of iPhones.",
+        "hi there! thanks for contacting Sam's iPhones. We fix broken iPhones. If your iPhone broken we can help with that.",
+        "hey there! thanks for reaching out to Sam's iPhone Repairs where we fix phones."
+    ]
+}

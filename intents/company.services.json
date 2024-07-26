@@ -1,0 +1,18 @@
+{
+    "questions": [
+        "what services do you offer?",
+        "what can you do?",
+        "how can you help me",
+        "my phone isn't working, can you help?"
+    ],
+    "answers": [
+        "We offer screen Repair and Replacement, Battery Replacement, Water Damage Repair, Camera Repair and Replacement, Charging Port Repair, Speaker and Microphone Repair, Button and Switch Repair, and Software Troubleshooting. We use quality products at a 90-day warranty guarantee.",
+        "Our services include Cracked or shattered screens, Unresponsive touchscreens, LCD and OLED replacements, Battery draining quickly, Device not holding a charge, Battery swelling issues",
+        "We help with Corrosion cleaning, Component replacement, Diagnostic services are some of what we do.",
+        "We help with Front and rear camera issues, Blurry or dark images, Camera app not opening",
+        "We help with Device not charging, Loose or damaged charging port, Slow charging issues",
+        "We help with No sound or distorted sound, Microphone not working, Low volume issues",
+        "We help with Home button, volume buttons, and power button issues, Unresponsive buttons, Mute switch repair",
+        "We help with iOS updates and restores, App crashes and freezes, Data recovery and backup"
+    ]
+}

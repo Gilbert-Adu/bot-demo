@@ -1,0 +1,12 @@
+{
+    "questions": [
+        "what are your prices?",
+        "how much?",
+        "how much will it cost to fix my phone?",
+        "how much is it?",
+        "how much will it cost to fix my iPhone?"
+    ],
+    "answers": [
+        "Our prices are as follows: Screen Repair: Starting at $79, Battery Replacement: Starting at $49, Water Damage Repair: Starting at $99, Camera Repair**: Starting at $69, Charging Port Repair: Starting at $59, Speaker/Microphone Repair: Starting at $49, Button Repair: Starting at $39, Software Troubleshooting: Starting at $29"
+    ]
+}

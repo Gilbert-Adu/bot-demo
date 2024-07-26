@@ -1,0 +1,16 @@
+{
+    "questions": [
+        "where are you located?",
+        "how do I find you guys?",
+        "where is your store?",
+        "where can I find your company"
+    ],
+    "answers": [
+        "We are at 123 Main Street, Tech City, CA 90210",
+        "You can find us at 123 Main Street, Tech City, CA 90210",
+        "We are 123 Main Street, Tech City, CA 90210"
+
+
+
+    ]
+}

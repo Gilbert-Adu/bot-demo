@@ -1,0 +1,1142 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "is,name,what,your": {
+            "intent": "company.ai",
+            "domain": "default"
+          },
+          "am,i,speak,who,with": {
+            "intent": "company.ai",
+            "domain": "default"
+          },
+          "is,this,who": {
+            "intent": "company.ai",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "company.hello",
+            "domain": "default"
+          },
+          "goodmorn": {
+            "intent": "company.hello",
+            "domain": "default"
+          },
+          "goodafternoon": {
+            "intent": "company.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "company.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "company.hello",
+            "domain": "default"
+          },
+          "are,locat,where,you": {
+            "intent": "company.location",
+            "domain": "default"
+          },
+          "do,find,guy,how,i,you": {
+            "intent": "company.location",
+            "domain": "default"
+          },
+          "is,store,where,your": {
+            "intent": "company.location",
+            "domain": "default"
+          },
+          "can,compani,find,i,where,your": {
+            "intent": "company.location",
+            "domain": "default"
+          },
+          "compani,is,name,of,the,what,your": {
+            "intent": "company.name",
+            "domain": "default"
+          },
+          "compani,is,what,your": {
+            "intent": "company.name",
+            "domain": "default"
+          },
+          "do,where,work,you": {
+            "intent": "company.name",
+            "domain": "default"
+          },
+          "compani,is,this,what": {
+            "intent": "company.name",
+            "domain": "default"
+          },
+          "are,price,what,your": {
+            "intent": "company.prices",
+            "domain": "default"
+          },
+          "how,much": {
+            "intent": "company.prices",
+            "domain": "default"
+          },
+          "cost,fix,how,it,much,my,phone,to,will": {
+            "intent": "company.prices",
+            "domain": "default"
+          },
+          "how,is,it,much": {
+            "intent": "company.prices",
+            "domain": "default"
+          },
+          "cost,fix,how,iphon,it,much,my,to,will": {
+            "intent": "company.prices",
+            "domain": "default"
+          },
+          "do,offer,servic,what,you": {
+            "intent": "company.services",
+            "domain": "default"
+          },
+          "can,do,what,you": {
+            "intent": "company.services",
+            "domain": "default"
+          },
+          "can,help,how,me,you": {
+            "intent": "company.services",
+            "domain": "default"
+          },
+          "can,help,is,my,not,phone,work,you": {
+            "intent": "company.services",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "company.ai": "default",
+          "company.hello": "default",
+          "company.location": "default",
+          "company.name": "default",
+          "company.prices": "default",
+          "company.services": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "what's your name?",
+            "intent": "company.ai"
+          },
+          {
+            "domain": "default",
+            "utterance": "who am I speaking with?",
+            "intent": "company.ai"
+          },
+          {
+            "domain": "default",
+            "utterance": "who is this?",
+            "intent": "company.ai"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "company.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Goodmorning",
+            "intent": "company.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Goodafternoon",
+            "intent": "company.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "company.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "company.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "where are you located?",
+            "intent": "company.location"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I find you guys?",
+            "intent": "company.location"
+          },
+          {
+            "domain": "default",
+            "utterance": "where is your store?",
+            "intent": "company.location"
+          },
+          {
+            "domain": "default",
+            "utterance": "where can I find your company",
+            "intent": "company.location"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's the name of your company?",
+            "intent": "company.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's your company?",
+            "intent": "company.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "where do you work?",
+            "intent": "company.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "what company is this?",
+            "intent": "company.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "what are your prices?",
+            "intent": "company.prices"
+          },
+          {
+            "domain": "default",
+            "utterance": "how much?",
+            "intent": "company.prices"
+          },
+          {
+            "domain": "default",
+            "utterance": "how much will it cost to fix my phone?",
+            "intent": "company.prices"
+          },
+          {
+            "domain": "default",
+            "utterance": "how much is it?",
+            "intent": "company.prices"
+          },
+          {
+            "domain": "default",
+            "utterance": "how much will it cost to fix my iPhone?",
+            "intent": "company.prices"
+          },
+          {
+            "domain": "default",
+            "utterance": "what services do you offer?",
+            "intent": "company.services"
+          },
+          {
+            "domain": "default",
+            "utterance": "what can you do?",
+            "intent": "company.services"
+          },
+          {
+            "domain": "default",
+            "utterance": "how can you help me",
+            "intent": "company.services"
+          },
+          {
+            "domain": "default",
+            "utterance": "my phone isn't working, can you help?",
+            "intent": "company.services"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "what": 1,
+              "is": 1,
+              "your": 1,
+              "name": 1,
+              "who": 1,
+              "am": 1,
+              "i": 1,
+              "speak": 1,
+              "with": 1,
+              "this": 1,
+              "hello": 1,
+              "goodmorn": 1,
+              "goodafternoon": 1,
+              "hi": 1,
+              "hey": 1,
+              "where": 1,
+              "are": 1,
+              "you": 1,
+              "locat": 1,
+              "how": 1,
+              "do": 1,
+              "find": 1,
+              "guy": 1,
+              "store": 1,
+              "can": 1,
+              "compani": 1,
+              "the": 1,
+              "of": 1,
+              "work": 1,
+              "price": 1,
+              "much": 1,
+              "will": 1,
+              "it": 1,
+              "cost": 1,
+              "to": 1,
+              "fix": 1,
+              "my": 1,
+              "phone": 1,
+              "iphon": 1,
+              "servic": 1,
+              "offer": 1,
+              "help": 1,
+              "me": 1,
+              "not": 1
+            },
+            "intents": {
+              "company.ai": 1,
+              "company.hello": 1,
+              "company.location": 1,
+              "company.name": 1,
+              "company.prices": 1,
+              "company.services": 1
+            },
+            "intentFeatures": {
+              "company.ai": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1,
+                "who": 1,
+                "am": 1,
+                "i": 1,
+                "speak": 1,
+                "with": 1,
+                "this": 1
+              },
+              "company.hello": {
+                "hello": 1,
+                "goodmorn": 1,
+                "goodafternoon": 1,
+                "hi": 1,
+                "hey": 1
+              },
+              "company.location": {
+                "where": 1,
+                "are": 1,
+                "you": 1,
+                "locat": 1,
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "find": 1,
+                "guy": 1,
+                "is": 1,
+                "your": 1,
+                "store": 1,
+                "can": 1,
+                "compani": 1
+              },
+              "company.name": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "name": 1,
+                "of": 1,
+                "your": 1,
+                "compani": 1,
+                "where": 1,
+                "do": 1,
+                "you": 1,
+                "work": 1,
+                "this": 1
+              },
+              "company.prices": {
+                "what": 1,
+                "are": 1,
+                "your": 1,
+                "price": 1,
+                "how": 1,
+                "much": 1,
+                "will": 1,
+                "it": 1,
+                "cost": 1,
+                "to": 1,
+                "fix": 1,
+                "my": 1,
+                "phone": 1,
+                "is": 1,
+                "iphon": 1
+              },
+              "company.services": {
+                "what": 1,
+                "servic": 1,
+                "do": 1,
+                "you": 1,
+                "offer": 1,
+                "can": 1,
+                "how": 1,
+                "help": 1,
+                "me": 1,
+                "my": 1,
+                "phone": 1,
+                "is": 1,
+                "not": 1,
+                "work": 1
+              }
+            },
+            "featuresToIntent": {
+              "what": [
+                "company.ai",
+                "company.name",
+                "company.prices",
+                "company.services"
+              ],
+              "is": [
+                "company.ai",
+                "company.location",
+                "company.name",
+                "company.prices",
+                "company.services"
+              ],
+              "your": [
+                "company.ai",
+                "company.location",
+                "company.name",
+                "company.prices"
+              ],
+              "name": [
+                "company.ai",
+                "company.name"
+              ],
+              "who": [
+                "company.ai"
+              ],
+              "am": [
+                "company.ai"
+              ],
+              "i": [
+                "company.ai",
+                "company.location"
+              ],
+              "speak": [
+                "company.ai"
+              ],
+              "with": [
+                "company.ai"
+              ],
+              "this": [
+                "company.ai",
+                "company.name"
+              ],
+              "hello": [
+                "company.hello"
+              ],
+              "goodmorn": [
+                "company.hello"
+              ],
+              "goodafternoon": [
+                "company.hello"
+              ],
+              "hi": [
+                "company.hello"
+              ],
+              "hey": [
+                "company.hello"
+              ],
+              "where": [
+                "company.location",
+                "company.name"
+              ],
+              "are": [
+                "company.location",
+                "company.prices"
+              ],
+              "you": [
+                "company.location",
+                "company.name",
+                "company.services"
+              ],
+              "locat": [
+                "company.location"
+              ],
+              "how": [
+                "company.location",
+                "company.prices",
+                "company.services"
+              ],
+              "do": [
+                "company.location",
+                "company.name",
+                "company.services"
+              ],
+              "find": [
+                "company.location"
+              ],
+              "guy": [
+                "company.location"
+              ],
+              "store": [
+                "company.location"
+              ],
+              "can": [
+                "company.location",
+                "company.services"
+              ],
+              "compani": [
+                "company.location",
+                "company.name"
+              ],
+              "the": [
+                "company.name"
+              ],
+              "of": [
+                "company.name"
+              ],
+              "work": [
+                "company.name",
+                "company.services"
+              ],
+              "price": [
+                "company.prices"
+              ],
+              "much": [
+                "company.prices"
+              ],
+              "will": [
+                "company.prices"
+              ],
+              "it": [
+                "company.prices"
+              ],
+              "cost": [
+                "company.prices"
+              ],
+              "to": [
+                "company.prices"
+              ],
+              "fix": [
+                "company.prices"
+              ],
+              "my": [
+                "company.prices",
+                "company.services"
+              ],
+              "phone": [
+                "company.prices",
+                "company.services"
+              ],
+              "iphon": [
+                "company.prices"
+              ],
+              "servic": [
+                "company.services"
+              ],
+              "offer": [
+                "company.services"
+              ],
+              "help": [
+                "company.services"
+              ],
+              "me": [
+                "company.services"
+              ],
+              "not": [
+                "company.services"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "what",
+                "is",
+                "your",
+                "name",
+                "who",
+                "am",
+                "i",
+                "speak",
+                "with",
+                "this",
+                "hello",
+                "goodmorn",
+                "goodafternoon",
+                "hi",
+                "hey",
+                "where",
+                "are",
+                "you",
+                "locat",
+                "how",
+                "do",
+                "find",
+                "guy",
+                "store",
+                "can",
+                "compani",
+                "the",
+                "of",
+                "work",
+                "price",
+                "much",
+                "will",
+                "it",
+                "cost",
+                "to",
+                "fix",
+                "my",
+                "phone",
+                "iphon",
+                "servic",
+                "offer",
+                "help",
+                "me",
+                "not"
+              ],
+              "intents": [
+                "company.ai",
+                "company.hello",
+                "company.location",
+                "company.name",
+                "company.prices",
+                "company.services"
+              ],
+              "perceptrons": [
+                [
+                  1.190714716911316,
+                  3.9480130672454834,
+                  1.5081708431243896,
+                  7.002546787261963,
+                  7.452374458312988,
+                  1.8099267482757568,
+                  1.128678560256958,
+                  1.8099267482757568,
+                  1.8099267482757568,
+                  2.4299559593200684,
+                  -0.5752119421958923,
+                  -0.5674823522567749,
+                  -0.5518738627433777,
+                  -0.5422772169113159,
+                  -0.5284308791160583,
+                  -3.078913450241089,
+                  -1.5454508066177368,
+                  -1.0392811298370361,
+                  -0.09359567612409592,
+                  -1.6873928308486938,
+                  -0.42029276490211487,
+                  -0.6335960626602173,
+                  -0.3283560574054718,
+                  -2.6234095096588135,
+                  -0.7618779540061951,
+                  -7.768163204193115,
+                  -3.0774354934692383,
+                  -3.0774354934692383,
+                  -0.48846235871315,
+                  -1.3983993530273438,
+                  -1.2963824272155762,
+                  -0.01615229994058609,
+                  -1.2375038862228394,
+                  -0.01615229994058609,
+                  -0.01615229994058609,
+                  -0.01615229994058609,
+                  -0.5030163526535034,
+                  -0.5030163526535034,
+                  0,
+                  -0.011998883448541164,
+                  -0.011998883448541164,
+                  -0.4711759090423584,
+                  -0.00023207537014968693,
+                  -0.47071173787117004,
+                  0.29079287175443097
+                ],
+                [
+                  -2.718111276626587,
+                  -3.363837242126465,
+                  -2.446439266204834,
+                  -0.24037697911262512,
+                  -2.8631176948547363,
+                  -1.2428959608078003,
+                  -1.7992610931396484,
+                  -1.2428959608078003,
+                  -1.2428959608078003,
+                  -2.137911796569824,
+                  5.892482280731201,
+                  5.930512428283691,
+                  5.908385753631592,
+                  5.884705066680908,
+                  5.859513759613037,
+                  -2.593684434890747,
+                  -2.052523374557495,
+                  -3.092475652694702,
+                  -0.8811370730400085,
+                  -4.5496368408203125,
+                  -1.7931079864501953,
+                  -0.5188133120536804,
+                  -0.2756352722644806,
+                  -0.5934020280838013,
+                  -0.768957257270813,
+                  -1.182186484336853,
+                  -0.19114471971988678,
+                  -0.19114471971988678,
+                  -0.8966681957244873,
+                  -1.157762050628662,
+                  -3.798182725906372,
+                  -0.3774615526199341,
+                  -0.5131657719612122,
+                  -0.3774615526199341,
+                  -0.3774615526199341,
+                  -0.3774615526199341,
+                  -0.38371041417121887,
+                  -0.28180044889450073,
+                  -0.07650494575500488,
+                  -0.38768666982650757,
+                  -0.38768666982650757,
+                  -0.3843764066696167,
+                  -0.37819185853004456,
+                  -0.0030810965690761805,
+                  8.374748310864273
+                ],
+                [
+                  -3.9092206954956055,
+                  1.6187628507614136,
+                  2.4538958072662354,
+                  -0.6266933083534241,
+                  -1.2369879484176636,
+                  -0.9182608127593994,
+                  3.847567319869995,
+                  -0.9182608127593994,
+                  -0.9182608127593994,
+                  -0.45877888798713684,
+                  -0.1759398728609085,
+                  -0.17108802497386932,
+                  -0.16834354400634766,
+                  -0.16402974724769592,
+                  -0.15980347990989685,
+                  5.071450710296631,
+                  2.9266531467437744,
+                  1.6927498579025269,
+                  4.476363182067871,
+                  1.308165431022644,
+                  -1.5439351797103882,
+                  4.766819953918457,
+                  4.083145618438721,
+                  4.989177703857422,
+                  -0.8741797804832458,
+                  -1.0588483810424805,
+                  -0.4619448184967041,
+                  -0.4619448184967041,
+                  -5.267989158630371,
+                  -1.5510879755020142,
+                  -1.7236552238464355,
+                  -0.17789968848228455,
+                  -1.2739650011062622,
+                  -0.17789968848228455,
+                  -0.17789968848228455,
+                  -0.17789968848228455,
+                  -0.34723514318466187,
+                  -0.28421226143836975,
+                  -0.031240742653608322,
+                  -0.19125530123710632,
+                  -0.19125530123710632,
+                  -1.2395652532577515,
+                  -1.0507025718688965,
+                  -0.12548039853572845,
+                  0.09262358466104345
+                ],
+                [
+                  2.060793399810791,
+                  1.8365150690078735,
+                  -0.7080597877502441,
+                  -2.7699029445648193,
+                  -2.3570241928100586,
+                  -0.038665223866701126,
+                  -2.785109281539917,
+                  -0.038665223866701126,
+                  -0.038665223866701126,
+                  0.36043161153793335,
+                  -0.05422719568014145,
+                  -0.05207252502441406,
+                  -0.05000327527523041,
+                  -0.04801606759428978,
+                  -0.04610765725374222,
+                  2.1839187145233154,
+                  -2.1140387058258057,
+                  1.154520869255066,
+                  -0.9967725872993469,
+                  -0.9912216663360596,
+                  3.234588623046875,
+                  -2.731595754623413,
+                  -0.023340001702308655,
+                  -2.8532116413116455,
+                  -6.167232036590576,
+                  10.586060523986816,
+                  1.8621841669082642,
+                  1.8621841669082642,
+                  7.748215675354004,
+                  -0.998383641242981,
+                  -0.8632839918136597,
+                  -0.09304957091808319,
+                  -0.6979525089263916,
+                  -0.09304957091808319,
+                  -0.09304957091808319,
+                  -0.09304957091808319,
+                  -1.1306544542312622,
+                  -1.111203670501709,
+                  -0.009725335985422134,
+                  -3.074810266494751,
+                  -3.074810266494751,
+                  -1.08077073097229,
+                  -0.04033302515745163,
+                  -1.0001047849655151,
+                  -0.2438836313485222
+                ],
+                [
+                  1.660693645477295,
+                  -2.068326473236084,
+                  1.571329951286316,
+                  -2.0455784797668457,
+                  -0.40861237049102783,
+                  -0.14741291105747223,
+                  -0.9256503582000732,
+                  -0.14741291105747223,
+                  -0.14741291105747223,
+                  -0.3304656147956848,
+                  -0.7777131795883179,
+                  -0.7739354968070984,
+                  -0.769953191280365,
+                  -0.7657736539840698,
+                  -0.7614040374755859,
+                  -1.3845685720443726,
+                  4.679808139801025,
+                  -3.160996913909912,
+                  -0.9157174825668335,
+                  5.848950386047363,
+                  -1.0456420183181763,
+                  -0.7433503270149231,
+                  -0.7433503270149231,
+                  -0.4269225597381592,
+                  -1.3266394138336182,
+                  -1.9563350677490234,
+                  -0.3245670795440674,
+                  -0.3245670795440674,
+                  -0.18282291293144226,
+                  5.595561981201172,
+                  7.531181335449219,
+                  -0.31478211283683777,
+                  2.243325710296631,
+                  -0.31478211283683777,
+                  -0.31478211283683777,
+                  -0.31478211283683777,
+                  -0.5759690403938293,
+                  -0.28279051184654236,
+                  -0.29250794649124146,
+                  -0.1248583123087883,
+                  -0.1248583123087883,
+                  -1.1985597610473633,
+                  -0.9373729825019836,
+                  -0.18282291293144226,
+                  0.7798254754771442
+                ],
+                [
+                  3.4830093383789062,
+                  -0.8115337491035461,
+                  -1.7052899599075317,
+                  -0.8167989253997803,
+                  -0.2944084405899048,
+                  -0.10091236233711243,
+                  -1.9257153272628784,
+                  -0.10091236233711243,
+                  -0.10091236233711243,
+                  -0.9914538264274597,
+                  -0.20460572838783264,
+                  -0.1968127340078354,
+                  -0.18931452929973602,
+                  -0.18210002779960632,
+                  -0.1751585751771927,
+                  -3.7602412700653076,
+                  -1.1804250478744507,
+                  3.8310842514038086,
+                  -0.7853059768676758,
+                  -0.22149686515331268,
+                  1.4141262769699097,
+                  -1.784206748008728,
+                  -1.5636166334152222,
+                  -0.03972869738936424,
+                  5.807346343994141,
+                  -1.4040446281433105,
+                  -0.10467028617858887,
+                  -0.10467028617858887,
+                  -1.205458402633667,
+                  -0.32243698835372925,
+                  -0.42332521080970764,
+                  -0.2687564492225647,
+                  -0.3240305483341217,
+                  -0.2687564492225647,
+                  -0.2687564492225647,
+                  -0.2687564492225647,
+                  1.1064727306365967,
+                  1.1531052589416504,
+                  -0.02331630326807499,
+                  2.920684576034546,
+                  2.920684576034546,
+                  3.2742886543273926,
+                  1.8730567693710327,
+                  1.401720643043518,
+                  -0.27214637568289685
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "what's your name?"
+      ],
+      [
+        "en",
+        "who am I speaking with?"
+      ],
+      [
+        "en",
+        "who is this?"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "Goodmorning"
+      ],
+      [
+        "en",
+        "Goodafternoon"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "where are you located?"
+      ],
+      [
+        "en",
+        "how do I find you guys?"
+      ],
+      [
+        "en",
+        "where is your store?"
+      ],
+      [
+        "en",
+        "where can I find your company"
+      ],
+      [
+        "en",
+        "what's the name of your company?"
+      ],
+      [
+        "en",
+        "what's your company?"
+      ],
+      [
+        "en",
+        "where do you work?"
+      ],
+      [
+        "en",
+        "what company is this?"
+      ],
+      [
+        "en",
+        "what are your prices?"
+      ],
+      [
+        "en",
+        "how much?"
+      ],
+      [
+        "en",
+        "how much will it cost to fix my phone?"
+      ],
+      [
+        "en",
+        "how much is it?"
+      ],
+      [
+        "en",
+        "how much will it cost to fix my iPhone?"
+      ],
+      [
+        "en",
+        "what services do you offer?"
+      ],
+      [
+        "en",
+        "what can you do?"
+      ],
+      [
+        "en",
+        "how can you help me"
+      ],
+      [
+        "en",
+        "my phone isn't working, can you help?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "company.ai": [
+          {
+            "answer": "My name is GilbertAI. I am a Customer Service Agent created by Gilbert Enos."
+          },
+          {
+            "answer": "I am GilbertAI."
+          },
+          {
+            "answer": "This is your favorite customer service agent, GilbertAI-- created by Gilbert Enos."
+          }
+        ],
+        "company.hello": [
+          {
+            "answer": "Hello! This is Sam's iPhone Repairs. My name is GilbertAI. We are  a leading repair service provider specializing in all models of iPhones. With over 10 years of experience in the industry, our certified technicians provide fast, reliable, and affordable repair services to get your device back to optimal performance."
+          },
+          {
+            "answer": "Goodmorning! Hope you're well. Thanks for contacting Sam's iPhone Repairs, a leading repair service provider specializing in all models of iPhones."
+          },
+          {
+            "answer": "hi there! thanks for contacting Sam's iPhones. We fix broken iPhones. If your iPhone broken we can help with that."
+          },
+          {
+            "answer": "hey there! thanks for reaching out to Sam's iPhone Repairs where we fix phones."
+          }
+        ],
+        "company.location": [
+          {
+            "answer": "We are at 123 Main Street, Tech City, CA 90210"
+          },
+          {
+            "answer": "You can find us at 123 Main Street, Tech City, CA 90210"
+          },
+          {
+            "answer": "We are 123 Main Street, Tech City, CA 90210"
+          }
+        ],
+        "company.name": [
+          {
+            "answer": "Our company is Sam's iPhone Repairs"
+          },
+          {
+            "answer": "Sam's iPhone Repairs"
+          }
+        ],
+        "company.prices": [
+          {
+            "answer": "Our prices are as follows: Screen Repair: Starting at $79, Battery Replacement: Starting at $49, Water Damage Repair: Starting at $99, Camera Repair**: Starting at $69, Charging Port Repair: Starting at $59, Speaker/Microphone Repair: Starting at $49, Button Repair: Starting at $39, Software Troubleshooting: Starting at $29"
+          }
+        ],
+        "company.services": [
+          {
+            "answer": "We offer screen Repair and Replacement, Battery Replacement, Water Damage Repair, Camera Repair and Replacement, Charging Port Repair, Speaker and Microphone Repair, Button and Switch Repair, and Software Troubleshooting. We use quality products at a 90-day warranty guarantee."
+          },
+          {
+            "answer": "Our services include Cracked or shattered screens, Unresponsive touchscreens, LCD and OLED replacements, Battery draining quickly, Device not holding a charge, Battery swelling issues"
+          },
+          {
+            "answer": "We help with Corrosion cleaning, Component replacement, Diagnostic services are some of what we do."
+          },
+          {
+            "answer": "We help with Front and rear camera issues, Blurry or dark images, Camera app not opening"
+          },
+          {
+            "answer": "We help with Device not charging, Loose or damaged charging port, Slow charging issues"
+          },
+          {
+            "answer": "We help with No sound or distorted sound, Microphone not working, Low volume issues"
+          },
+          {
+            "answer": "We help with Home button, volume buttons, and power button issues, Unresponsive buttons, Mute switch repair"
+          },
+          {
+            "answer": "We help with iOS updates and restores, App crashes and freezes, Data recovery and backup"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

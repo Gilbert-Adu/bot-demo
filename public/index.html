@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      max-width: 660px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+    }
+    .chatbox {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .chatbox p {
+      margin: 0;
+      padding: 5px 0;
+    }
+
+    .sample-questions {
+      width: 50vw;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <h1>Chat with GilbertAI(a basic demo)</h1>
+    <div class="chatbox" id="chatbox"></div>
+    <form id="chat-form">
+      <input type="text" id="query" placeholder="Type your query" required>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <div class="sample-questions">
+      <h2 style="text-decoration: underline;">Sample questions to ask</h2>
+      <ul>
+        <li>hello</li>
+        <li>who are you?</li>
+        <li>what's your company name?</li>
+        <li>where are you located?</li>
+        <li>how can you help me?</li>
+        <li>how much?</li>
+        <li>what services do you offer?</li>
+        <li>what is your name?</li>
+      </ul>
+
+      <span><span style="color: red;">NOTE1</span> This is a demo NLP AI chatbot that can learn if it is built out more</span><br><br>
+      <span><span style="color: red;">NOTE2:</span> This is hosted on a free instance of Render which is why it took long to load the page</span>
+
+    </div>
+    
+  </div>
+  
+  <script>
+    document.getElementById('chat-form').addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent form from submitting the traditional way
+
+      const query = document.getElementById('query').value;
+
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ query }),
+        });
+
+        const data = await response.json();
+
+        // Display the query and the response in the chatbox
+        const chatbox = document.getElementById('chatbox');
+        const queryElement = document.createElement('p');
+        queryElement.textContent = `You: ${query}`;
+        chatbox.appendChild(queryElement);
+
+        const responseElement = document.createElement('p');
+        responseElement.textContent = `GilbertAI: ${data.response}`;
+        chatbox.appendChild(responseElement);
+
+        // Clear the input
+        document.getElementById('query').value = '';
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+</html>
